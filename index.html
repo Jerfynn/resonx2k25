@@ -1,248 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RESONX 2K25 | ECE Symposium</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet" />
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-    />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RESONX 2K25 | College Symposium</title>
+  <meta name="title" content="RESONX 2K25">
+  <meta name="description" content="The Annual College Symposium for the Future of Tech.">
+
+  <link rel="shortcut icon" href="./assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
 </head>
-<body>
-    <header>
-        <div class="logo">RESONX <span>2K25</span></div>
-        <nav class="nav-menu">
-            <a href="#about">About</a>
-            <a href="#events">Events</a>
-            <a href="#timeline">Timeline</a>
-            <a href="#organizers">Organizers</a>
-            <a href="#register">Registration</a>
-        </nav>
-        <div class="burger-menu" id="burger-menu">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <p class="subtitle">Department of ECE Presents</p>
-                <h1>RESONX 2K25</h1>
-                <div class="date-info">
-                    <i class="fas fa-calendar-alt"></i> Nov 5, 2025
-                    <span class="separator">|</span>
-                    <i class="fas fa-map-marker-alt"></i> BIT Campus, Trichy
-                </div>
-                <div id="countdown" class="countdown-timer"></div>
-                <a href="#register" class="cta-button large-cta">Register Now</a>
-                <div class="contact-icons">
-  <a href="https://www.instagram.com/resonx2025?utm_source=qr&igsh=ZjJqcDg4bWVrc2Fj" target="_blank" title="Instagram"><i class="fab fa-instagram"></i> @resonx2025</a>
-  <a href="mailto:info.resonxbit@gmail.com" title="Email"><i class="far fa-envelope"></i> info.resonxbit@gmail.com</a>
-</div>
+<body id="top">
 
-            </div>
-        </section>
+  <header class="header" data-header>
+    <div class="container">
 
-        <section id="about" class="container">
-            <h2>What's RESONX?</h2>
-            <p class="lead-text">
-                RESONX 2K25 is a one-day ECE symposium, fusing ingenuity, competition, and fun. Discover our blend of technical and cultural highlights to elevate your college experience!
-            </p>
-            <div class="stats-grid">
-                <div class="stat-card"><h3>4</h3><p>Total Events</p></div>
-                <div class="stat-card"><h3>₹250/-</h3><p>Entry Fee</p></div>
-                <div class="stat-card"><h3>Spot</h3><p>Registration</p></div>
-            </div>
-        </section>
+      <a href="#home" class="logo">
+        RESONX <span>2K25</span>
+      </a>
 
-        <section id="events" class="container">
-    <h2>Technical Events</h2>
-    <div class="tracks-grid tech-events">
-        <div class="track-card tech">
-            <i class="fas fa-lightbulb"></i>
-            <h3>Idea Harvest</h3>
-            <p>Pitch innovative electronics ideas and wow the panel!</p>
-        </div>
-        <div class="track-card tech">
-            <i class="fas fa-bolt"></i>
-            <h3>Amp Alert</h3>
-            <p>Test your circuit troubleshooting skills in a race against time.</p>
-        </div>
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>about</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#prizes" class="navbar-link" data-nav-link>prizes</a>
+          </li>
+          
+          <li class="navbar-item">
+            <a href="#certificates" class="navbar-link" data-nav-link>certificates</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#news" class="navbar-link" data-nav-link>events</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="./assets/Brochure.pdf" class="btn" data-btn>Open Event Brochure</a>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
     </div>
+  </header>
+  <main>
+    <article>
 
-    <h2 style="margin-top: 3rem;">Non-Technical Events</h2>
-    <div class="tracks-grid nontech-events">
-        <div class="track-card nontech">
-            <i class="fas fa-question-circle"></i>
-            <h3>Think or Sink</h3>
-            <p>Brainy, quirky, and fun! Win by outsmarting the rest in this quiz challenge.</p>
+      <section class="hero has-before" id="home">
+        <div class="container">
+
+          <h1 class="h1 title hero-title" data-reveal="bottom">RESONX 2K25</h1>
+          <h2 class="h1 title hero-title" data-reveal="bottom">A National Level symposium</h2>
+          <p class="section-subtitle" data-reveal="bottom">The Future of Innovation & Technology</p>
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            proudly <span class="span">presents</span>
+          </h2>
+
+          <div class="hero-banner" data-reveal="bottom">
+            <img src="./assets/images/hero-banner.png" width="850" height="414" alt="hero banner" class="w-100">
+          </div>
+          
+          <p class="section-subtitle" data-reveal="bottom">5 NOVEMBER 2025 | B - BLOCK B217</p>
+
+          <div class="countdown-container" data-reveal="bottom">
+              <div class="countdown" id="countdown">
+                  </div>
+          </div>
+          
+          <a href="#" class="btn" data-btn data-reveal="bottom">Register Now!</a>
+          <br><br>
+
         </div>
-        <div class="track-card nontech">
-            <i class="fas fa-grin-beam"></i>
-            <h3>Fun Fest</h3>
-            <p>Kick back and enjoy games and activities crafted for guaranteed smiles.</p>
+      </section>
+
+      <section class="section about" aria-label="about us" id="about">
+        <div class="container">
+
+          <p class="section-subtitle" data-reveal="bottom">About Us</p>
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            What is <span class="span">RESONX 2K25</span>?
+          </h2>
+
+          <p class="section-text" data-reveal="bottom" style="max-width: none; text-align: left;">
+           Resonx is a National Level Symposium conducted by ECE department 
+          </p>
+          
         </div>
-    </div>
-</section>
+      </section>
+      <section class="section prizes" aria-label="Prize Distribution" id="prizes">
+        <div class="container">
 
+          <p class="section-subtitle" data-reveal="bottom">Compete for extraordinary rewards that will accelerate your professional journey</p>
 
-        <section id="timeline" class="alt-bg">
-            <div class="container">
-                <h2>Event Timeline</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="time"><i class="fas fa-door-open"></i> 8:30 AM</div>
-                        <div class="desc">Check-in & Welcome</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time"><i class="fas fa-microphone"></i> 9:00 AM</div>
-                        <div class="desc">Inauguration Ceremony</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time"><i class="fas fa-lightbulb"></i> 9:30 AM</div>
-                        <div class="desc">Idea Harvest (Tech Event)</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time"><i class="fas fa-bolt"></i> 11:00 AM</div>
-                        <div class="desc">Amp Alert (Tech Event)</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time"><i class="fas fa-question-circle"></i> 1:00 PM</div>
-                        <div class="desc">Think or Sink (Non-Tech Event)</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time"><i class="fas fa-grin-beam"></i> 2:30 PM</div>
-                        <div class="desc">Fun Fest (Non-Tech Event)</div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="time"><i class="fas fa-trophy"></i> 4:00 PM</div>
-                        <div class="desc">Valedictory & Prizes</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          <h2 class="h2 section-title" data-reveal="bottom">
+            PRIZE <span class="span">DISTRIBUTION</span>
+          </h2>
 
-        <section id="organizers" class="container alt-bg">
-            <h2>Organizing Committee & Event Details</h2>
-            <div class="organizers-grid">
-                <div class="org-card">
-                    <h3>Chairperson</h3>
-                    <p>
-                        Dr. P. Hariharan<br/>
-                        Director (Centre for Constituent Colleges)<br/>
-                        Anna University - Chennai
-                    </p>
-                </div>
-                <div class="org-card">
-                    <h3>Convener</h3>
-                    <p>
-                        Dr. T. Senthil Kumar<br/>
-                        Professor & Dean,<br/>
-                        UCE-BIT Campus, Trichy
-                    </p>
-                </div>
-                <div class="org-card">
-                    <h3>Organizing Secretary</h3>
-                    <p>
-                        Dr. P. Ramadevi<br/>
-                        Associate Professor & Head of ECE<br/>
-                        UCE-BIT Campus, Trichy
-                    </p>
-                </div>
-                <div class="org-card">
-                    <h3>Co-ordinators</h3>
-                    <ul>
-                        <li>Dr. M. Bhuvaneshwari</li>
-                        <li>Mrs. R. Jayarani</li>
-                        <li>Mrs. K. Padmaja</li>
-                        <li>Mrs. M. Azhagu Subha</li>
-                    </ul>
-                </div>
-                <div class="org-card">
-                    <h3>President & Secretary</h3>
-                    <p>PRESIDENT: Mohanselvan<br/>SECRETARY: Sarumathi</p>
-                </div>
-                <div class="org-card">
-                    <h3>Student Coordinators</h3>
-                    <ul>
-                        <li>Nivethitha - 7826842005</li>
-                        <li>Hariharan - 9344664109</li>
-                        <li>Ananthavalli - 8668096929</li>
-                        <li>Tharun - 9442876517</li>
-                    </ul>
-                </div>
-            </div>
+          <ul class="prize-list" data-reveal="bottom">
+            
+            <li class="prize-card">
+                <p class="prize-rank">1ST Prize</p>
+                <h3 class="prize-title">CHAMPION</h3>
+                <p class="prize-value">₹1000</p> 
+            </li>
+            
+            <li class="prize-card">
+                <p class="prize-rank">2ND Prize</p>
+                <h3 class="prize-title">WINNER</h3>
+                <p class="prize-value">₹700</p> 
+            </li>
+            
+            <li class="prize-card">
+                <p class="prize-rank">3RD Prize</p>
+                <h3 class="prize-title">RUNNER UP</h3>
+                <p class="prize-value">₹500</p> 
+            </li>
+        
 
-            <h3 class="section-subtitle" style="margin-top: 40px;">Symposium Info</h3>
-            <p class="lead-text center-text">
-                <strong>National Level Technical Symposium</strong><br/>
-                <strong>Date:</strong> 5 November 2025<br/>
-                <strong>Venue:</strong> B - Block B217<br/>
-                Rewards for all other winners<br/>
-                Certificate for all participants<br/>
-                <em>Note: PPTX file submission by 3 November, 12 PM</em><br/>
-                Spot registration available
-            </p>
-            <section id="location" class="container alt-bg">
-    <h2>Venue Location</h2>
-    <p class="lead-text center-text">B - Block B217, BIT Campus, Trichy</p>
-    <div class="map-container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.8410501440905!2d78.68131907553542!3d10.785418279265434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab722d3e7dacdd%3A0x20cae0516193a605!2sBIT%20Campus%2C%20Trichy!5e0!3m2!1sen!2sin!4v1697318999397!5m2!1sen!2sin"
-            width="100%"
-            height="350"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="BIT Campus Location"
-        ></iframe>
-    </div>
-</section>
-
-        </section>
-
-        <section id="register" class="container">
-            <h2>Registration</h2>
-            <div class="registration-details">
-                <p>Registration Fee: <strong>₹250/-</strong> | Spot Registration Available</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScHLIDyUj-As6peGlAS8-1uRaSJ-0ah2tgveufYbQjU9WXqnA/viewform?usp=dialog" target="_blank" class="cta-button large-cta">Register Now</a>
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-    <div class="footer-content container">
-        <div class="footer-section contact-info">
-            <h3>RESONX 2K25</h3>
-            <p>University College of Engineering, BIT Campus, Trichy</p>
-            <p>
-                <i class="fab fa-instagram"></i>
-                <a href="https://www.instagram.com/resonx2025?utm_source=qr&igsh=ZjJqcDg4bWVrc2Fj" target="_blank"> @resonx2025</a>
-            </p>
-            <p>
-                <i class="far fa-envelope"></i>
-                <a href="mailto:info.resonxbit@gmail.com"> info.resonxbit@gmail.com</a>
-            </p>
+          </ul>
         </div>
-        <div class="footer-section social-links">
-            <h3>Follow Us</h3>
-            <a href="https://www.instagram.com/resonx2025?utm_source=qr&igsh=ZjJqcDg4bWVrc2Fj" target="_blank">
-                <i class="fab fa-instagram"></i>
+      </section>
+      <section class="section certificates" aria-label="Participant Certificates" id="certificates">
+        <div class="container">
+          <p class="section-subtitle" data-reveal="bottom">Your participation and efforts will be officially recognized</p>
+          <h2 class="h2 section-title" data-reveal="bottom">
+            PARTICIPANT <span class="span">CERTIFICATES</span>
+          </h2>
+          <p class="section-text" data-reveal="bottom" style="font-size: var(--fs-4); max-width: 800px; margin-inline: auto;">
+            Official Participant Certificates will be provided to every participant of RESONX 2K25, recognizing your contribution and engagement in the symposium.
+          </p>
+        </div>
+      </section>
+      <section class="section news" aria-label="our latest news" id="news">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Technical <span class="span">Events</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom">
+            Fuel your passion for tech through exciting and hands-on technical events.
+          </p>
+
+          <ul class="news-list">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/Idea_Harvest.png" width="600" height="400" loading="lazy"
+                    alt="Idea Harvest Event Image" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <a href="./assets/ideaharvest.pdf" class="card-tag">IDEA HARVEST</a>
+                  <h3 class="h3">
+                    <a href="./assets/ideaharvest.pdf" class="card-title">IDEA HARVEST</a>
+                  </h3>
+                  <p class="card-text">
+                    Solve real problems with real ideas. Your voice is rewarded in this innovative challenge!
+                  </p>
+                  <a href="./assets/ideaharvest.pdf" class="link has-before">Coordinator : Akileshwaran <br> +91 90800 60321 <br> View Details</a>
+                </div>
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/Amp_Alert.png" width="600" height="400" loading="lazy"
+                    alt="Amp Alert Event Image" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <a href="./assets/ampalert.pdf" class="card-tag">AMP ALERT</a>
+                  <h3 class="h3">
+                    <a href="./assets/ampalert.pdf" class="card-title">AMP ALERT</a>
+                  </h3>
+                  <p class="card-text">
+                    A high-stakes circuit debugging challenge. Power up your creativity and connect the dots!
+                  </p>
+                  <a href="./assets/ampalert.pdf" class="link has-before">Coordinator : Balasubramanian <br> +91 99943 80667 <br> View Details</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section news" aria-label="non-technical events" id="non-tech">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Non-technical <span class="span">events</span>
+          </h2>
+
+          <p class="section-text" data-reveal="bottom">
+            Unleash your creativity, showcase your talent, and let the fun take center stage!
+          </p>
+
+          <ul class="news-list">
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/thinkorsink.png" width="600" height="400" loading="lazy"
+                    alt="Think or Sink Event Image" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <a href="./assets/thinkorsink.pdf" class="card-tag">THINK OR SINK</a>
+                  <h3 class="h3">
+                    <a href="./assets/thinkorsink.pdf" class="card-title">THINK OR SINK</a>
+                  </h3>
+                  <p class="card-text">
+                    A challenging quiz event where quick thinking is the only way to stay afloat!
+                  </p>
+                  <a href="./assets/thinkorsink.pdf" class="link has-before">Coordinator : Anandhavalli <br> +91 86680 96929 <br> View Details</a>
+                </div>
+              </div>
+            </li>
+
+            <li data-reveal="bottom">
+              <div class="news-card">
+                <figure class="card-banner img-holder" style="--width: 600; --height: 400;">
+                  <img src="./assets/images/fun_fest.png" width="600" height="400" loading="lazy"
+                    alt="Fun Fest Event Image" class="img-cover">
+                </figure>
+                <div class="card-content">
+                  <a href="./assets/funfest.pdf" class="card-tag">FUN FEST</a>
+                  <h3 class="h3">
+                    <a href="./assets/funfest.pdf" class="card-title">FUN FEST</a>
+                  </h3>
+                  <p class="card-text">
+                    A collection of fun-filled games and activities designed to unleash your competitive spirit.
+                  </p>
+                  <a href="./assets/funfest.pdf" class="link has-before">Coordinator : Deepa <br> +91 96260 09612 <br> View Details</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <section class="section location" aria-label="Location Map" id="location-map">
+        <div class="container">
+
+          <h2 class="h2 section-title" data-reveal="bottom">
+            Find Our <span class="span">Location</span>
+          </h2>
+
+          <div class="map-container" data-reveal="bottom">
+              <iframe 
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.410976135677!2d77.02701407421387!3d10.925000957597957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8594b2a9d8213%3A0x608b8b3b3e2a0480!2sB%20Block%2C%20B217%20Auditorium!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                  width="100%" 
+                  height="450" 
+                  style="border:0;" 
+                  allowfullscreen="" 
+                  loading="lazy" 
+                  referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+          </div>
+
+        </div>
+      </section>
+      
+    </article>
+  </main>
+
+
+  <footer class="footer" id="contact">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand" data-reveal="bottom">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="150" height="73" loading="lazy" alt="RESONX 2K25 logo">
+          </a>
+
+          <p class="footer-text">
+            Where Ideas Converge, Minds Evolve, and Innovation Takes Center Stage.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/resonx2025?utm_source=qr&igsh=ZjJqcDg4bWVrc2Fj" class="social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="title footer-list-title has-after">Quick Links</p>
+
+          <ul>
+
+            <li>
+              <a href="#" class="footer-link">Help Center</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacy and Policy</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#contact" class="footer-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list" data-reveal="bottom">
+
+          <p class="title footer-list-title has-after">Contact Us</p>
+
+          <div class="contact-item">
+            <span class="span">Location:</span>
+            <a href="https://maps.app.goo.gl/UwoGca1unLDMkdoR7" target="_blank" class="contact-link">
+              B - BLOCK B217
             </a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Join Us:</span>
+
+            <a href="mailto:info.resonxbit@gmail.com" class="contact-link">info.resonxbit@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">For Queries:</span>
+
+            <a href="tel:+918015746582" class="contact-link">Event Head: Jerfin <br> +91 80157 46582</a>
+          </div>
+
         </div>
+
+      </div>
     </div>
+
     <div class="footer-bottom">
-        &copy; 2025 RESONX 2K25. All rights reserved.
+      <div class="container">
+
+        <p class="copyright">
+          © 2025 RESONX 2K25. All Rights Reserved.
+        </p>
+
+      </div>
     </div>
-</footer>
+
+  </footer>
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline" aria-hidden="true"></ion-icon>
+  </a>
 
 
-    <script src="assets/js/script.js" defer></script>
+  <div class="cursor" data-cursor></div>
+
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
